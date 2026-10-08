@@ -47,7 +47,7 @@ interface InquiryPayload {
 function useCreateNxYatraInquiry() {
   return useMutation({
     mutationFn: async (data: InquiryPayload) => {
-      const response = await fetch('/api/nx-yatra/inquiries', {
+      const response = await fetch('https://nxyatra.vercel.app/api/nx-yatra/inquiries', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
